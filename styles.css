@@ -62,25 +62,64 @@ body {
   text-align: center;
 }
 
+
+
+
+
 .projects {
   width: 100vw;
   height: 100vh;
   display: grid;
+  --presentation-height: 0; /* initialize the variable */
+  
 
   grid-template-columns: 25% 25% 30% 20%;
   grid-template-areas:
     ". . . ."
     ". . . ."
     ". V T ."
-    ". . . ."
-    ". . . .";
+    ". S S ."
+
 }
 
-
-.project-1{
+.projects .presentation{
   grid-area: V;
-  height: 800px;
-  width:  450px;
-  justify-self: center;
-  align-self: end;
+  max-width: 800px; /* set the maximum width to 800px */
+  margin: 0 auto; /* center the element horizontally */
+  justify-self: end; /* pull the element to the right */
 }
+
+.projects .presentation video {
+  display: block; /* make the video element a block element */
+  width: 100%; /* set the width to 100% of the container */
+  height: calc(var(--presentation-height) * 0.5625); /* set height to 9:16 ratio of presentation video */
+  --presentation-height: height;
+}
+
+.projects .description {
+  grid-area: T;
+  height: var(--presentation-height);
+  max-width: 800px; /* set the maximum width to 800px */
+  margin: 0 auto; /* center the element horizontally */
+  background-color: white; /* set the background color to white */
+  display: block; /* make the element a block element */
+  width: 100%; /* set the width to 100% of the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
