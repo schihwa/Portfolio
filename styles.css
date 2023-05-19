@@ -1,0 +1,18 @@
+/* Set the width of the main container */
+main {
+    display: flex;
+     flex-direction: row;
+     width: 100%;
+   }
+   
+   /* Set the width of the profile section */
+   .profile-section {
+     width: 30%;
+     margin-right: 20px;
+   }
+   
+   /* Set the width of the content section */
+   .content-section {
+     width: 70%;
+   }
+   
