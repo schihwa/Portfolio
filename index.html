@@ -5,30 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/sideBar.css">
+    <link rel="stylesheet" href="styles/tools.css">
+    <link rel="stylesheet" href="styles/aboutMe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <section class="profile-section">
+    <section class="profile-section">
+        <div class="stick">
             <figure>
-                <img src="profile.jpg" alt="Profile Picture">
-                <figcaption>Seth Chihwa</figcaption>
+                <img class="profile-picture" src="assets/images/profile-picture.jpeg" alt="Profile Picture">
             </figure>
             <article>
-                <h2>About Me</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper nisl at diam bibendum, vitae
-                    tempor nulla hendrerit.
-                </p>
-                <nav class="contacts">
+                <h2>schihwa109@gmail.com</h2>
+                <div class="contacts">
                     <ul>
                         <li>
                             <a href="https://github.com/schihwa">
-                                <img src="assets/github.png" alt="GitHub" />
+                                <img src="assets/images/github.png" alt="GitHub" />
                             </a>
                         </li>
                         <li>
@@ -38,23 +36,86 @@
                         </li>
                         <li>
                             <a href="media/SethChihwaCV.docx" download>
-                                <img src="images/cv.png" alt="My CV" />
+                                <img src="assets/images/cv.png" alt="My CV" />
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </article>
-        </section>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <section class="about-me">
+                <h1>Hi, I'm Seth</h1>
+                <P>im a..</P>
+                <P>computer science student.</P>
+                <P>software engineer</P>
+                <p>perfectionist</p>
+                <p>cool guy</p>
+                <p><span class="auto-type"></span><br /></p>
+            </section>
+        </div>
+        <div class="mini-section">
+            <h1>Programming languages I use</h1>
 
-        <section class="content-section">
-            <h2>Section Title</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in lectus ut ex fringilla pulvinar.
-                Integer aliquet sapien in est bibendum cursus. Duis in suscipit lacus, sit amet congue eros. Nullam
-                sagittis ultrices nunc, ac egestas nulla euismod nec.
-            </p>
-        </section>
-    </main>
+            <div class="language">
+                <img src="assets/images/tools/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/php.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/mysql.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/mongodb.png" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/linux.png" alt="Linux">
+                <p>Linux</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/java.png" alt="Java">
+                <p>Java</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+
+            <div class="language">
+                <img src="assets/images/tools/css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+        </div>
+    </section>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: [" I am inevitable"],
+        typeSpeed: 40,
+        backSpeed: 100,
+        loop: false,
+    });
+</script>
 
 </html>

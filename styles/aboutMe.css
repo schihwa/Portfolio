@@ -1,0 +1,19 @@
+
+
+.container .about-me {
+    display: flex; /* Add this line */
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(224, 205, 169);
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* Add this line */
+}
+
+.container .about-me h1{
+    font-size: 500%;
+}
+.container .about-me p{
+    font-size: 150%;
+}

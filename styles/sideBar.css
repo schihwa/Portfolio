@@ -1,0 +1,52 @@
+
+/* Set the width and height of the profile section */
+.profile-section .stick {
+
+    position: fixed;
+}
+
+
+.profile-section .stick {
+    display: flex;
+    flex-direction: column;
+    /* Stack the child items vertically */
+    justify-content: center;
+    /* Align the contents vertically in the center */
+    height: 100%;
+    /* Set the height of profile section to 100% of its parent container (main) */
+    background-color: rgb(22, 22, 22);
+    color: rgb(224, 205, 169);
+    align-items: center;
+    width: 25%
+}
+
+
+.profile-section .stick ul {
+    list-style: none;
+    display: flex; /* Add this line to arrange list items horizontally */
+    justify-content: center;
+}
+
+.profile-section .stick ul li {
+    margin-right: 10px; 
+}
+
+.profile-section .stick .profile-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.profile-section .contacts img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-section .stick h2 {
+    text-align: center;
+}
+
+.profile-section .stick ul {
+    list-style: none;
+    /* Remove the default bullet points for the list */
+}
