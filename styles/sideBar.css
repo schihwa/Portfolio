@@ -25,6 +25,7 @@
     list-style: none;
     display: flex; /* Add this line to arrange list items horizontally */
     justify-content: center;
+
 }
 
 .profile-section .stick ul li {
